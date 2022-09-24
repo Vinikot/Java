@@ -1,0 +1,26 @@
+package dddd1;
+
+import java.util.Scanner;
+
+public class Ex32 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		
+		double a,b;
+		
+		System.out.printf("Digite um valor(A): ");
+		a = ler.nextDouble();
+		
+		System.out.printf("Digite um valor(B) maior que (A): ");
+		b = ler.nextDouble();
+		
+		while(b<a) {
+			System.out.println("Valor invalido!");
+			System.out.printf("Digite um valor(B) maior que (A): ");
+			b = ler.nextDouble();
+		}
+
+	}
+
+}

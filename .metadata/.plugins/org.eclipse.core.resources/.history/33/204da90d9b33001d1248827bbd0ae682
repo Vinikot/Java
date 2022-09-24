@@ -1,0 +1,31 @@
+package entrada_processamento_saida;
+
+import java.util.Scanner;
+public class Ex24 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		
+		String n,ec,tc;
+		char s; 
+		
+		System.out.printf("Digite seu nome:");
+		n = ler.next();
+		System.out.printf("Digite seu sexo; M ou F :");
+		s = ler.next().charAt(0);
+		System.out.printf("Digite seu estado civil; Casado(a) ou Solteiro(a):");
+		ec = ler.next();
+		
+		if (sexo.equals("f") && estado_civil.equals("casada")) {
+			System.out.printf("digite o ano de casada: ");
+			anos = ler.nextInt();
+			
+		}else if (sexo.equals("m")) {
+			System.out.printf("seu sexo nao é feminino");
+			
+		}else {
+			System.out.printf("invalido");
+		}
+	}
+
+}

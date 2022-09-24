@@ -1,0 +1,16 @@
+package entrada_processamento_saida;
+
+import java.util.Scanner;
+public class Ex41f {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		
+		int n,i,a;
+		
+		System.out.printf("Digite um valor positivo menor que 100: ");
+		n=ler.nextInt();
+
+	}
+
+}

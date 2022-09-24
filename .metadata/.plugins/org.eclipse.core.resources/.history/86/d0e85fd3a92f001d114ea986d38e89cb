@@ -1,0 +1,24 @@
+package dddd1;
+
+import java.util.Scanner;
+public class Ex31 {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		
+		double x;
+		
+		System.out.printf("Digite um valor positivo: ");
+		x = ler.nextDouble();
+		
+		while(x<=0) {
+			System.out.println("Valor invalido!");
+			System.out.printf("Digite um valor positivo: ");
+			x = ler.nextDouble();
+		}
+		
+		
+
+	}
+
+}

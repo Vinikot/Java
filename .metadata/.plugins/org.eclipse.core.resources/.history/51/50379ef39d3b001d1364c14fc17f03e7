@@ -1,0 +1,41 @@
+package classe_atributo_obj;
+import java.util.Scanner;
+public class Ex51 {
+
+   public static void main(String[] args) {
+        Scanner ler = new Scanner(System.in);
+        
+        Cliente[] lista=new Cliente[5];
+        
+        for(int i=0;i<=4;i++) {
+            Cliente x=new Cliente();
+            
+            System.out.print("\nDigite o id: ");
+            x.id=ler.nextInt();
+            
+            System.out.print("\nDigite o nome: ");
+            x.nome=ler.next();
+            
+            System.out.print("\nDigite o idade: ");
+            x.idade=ler.nextInt();
+            
+            System.out.print("\nDigite o email: ");
+            x.email=ler.next();
+            
+            lista[i]=x;            
+        }
+        
+        for(int j=0;j<=4;j++) {
+            if(lista[j].idade >18) {
+                System.out.println(lista[j].id+lista[j].nome+lista[j].idade+lista[j].email);
+            }
+            
+        }
+
+
+
+   }
+
+
+
+}

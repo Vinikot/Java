@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;entrada_processamento_saida.Wx13&apos; to &apos;Ex13&apos;&#x0D;&#x0A;- Original project: &apos;ddd&apos;&#x0D;&#x0A;- Original element: &apos;entrada_processamento_saida.Wx13&apos;&#x0D;&#x0A;- Renamed element: &apos;entrada_processamento_saida.Ex13&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;Wx13&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;entrada_processamento_saida{Wx13.java[Wx13" matchStrategy="1" name="Ex13" qualified="false" references="true" similarDeclarations="false" stamp="1661561990700" textual="false" version="1.0"/>
+</session>
