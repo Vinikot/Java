@@ -1,0 +1,33 @@
+package Ex54;
+
+public class Cliente {
+	int id;
+	int idade;
+	String nome;
+	String email;
+	ContaBancaria conta;
+	
+	Cliente(){
+		
+	}
+	
+	Cliente(int id, int idade, String nome, String email, ContaBancaria conta){
+		this.id=id;
+		this.nome=nome;
+		this.idade=idade;
+		this.email=email;
+		this.conta=conta;
+	}
+	
+	public void atualizarEmail(String novoEmial){
+		
+	}
+	
+	public String exibirNomeIdade() {
+		
+	}
+	
+	public String exibirDadosConta() {
+		
+	}
+}

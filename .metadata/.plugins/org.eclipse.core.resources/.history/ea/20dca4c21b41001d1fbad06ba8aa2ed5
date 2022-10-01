@@ -1,0 +1,60 @@
+package Ex54;
+import java.util.Scanner;
+public class Ex54 {
+
+	public static void main(String[] args) {
+		Scanner ler=new Scanner(System.in);
+		
+		char cb;
+		String agencia, numero;
+		double saldo;
+		
+		Cliente[] listaCliente=new Cliente[5];
+		
+		for(int i=0;i<=4;i++) {
+			Cliente a=new Cliente();
+			
+			System.out.print("Digite seu ID: ");
+			a.id=ler.nextInt();
+			
+			System.out.print("Digite seu nome: ");
+			a.nome=ler.next();
+			
+			System.out.print("Digite sua idade: ");
+			a.idade=ler.nextInt();
+			
+			System.out.print("Digite seu email: ");
+			a.email=ler.next();
+				
+			System.out.print("Possui conta bancaria? (APENAS 's' OU 'n'): ");
+			cb=ler.next().charAt(0);
+			
+			if(cb =='s') {
+				System.out.print("Digite sua agencia bancaria: ");
+				agencia=ler.next();
+				
+				System.out.print("Digite seu numero: ");
+				numero=ler.next();
+				
+				System.out.print("Digite seu saldo: ");
+				saldo=ler.nextDouble();
+				
+				ContaBancaria b=new ContaBancaria(agencia, numero, saldo);
+				a.conta=b;
+			}else {
+				ContaBancaria b=null;
+				a.conta=b;
+			}
+			
+			listaCliente[i]=a;
+		}
+		
+		for(int i=0;i<=4;i++) {
+			System.out.print(listaCliente[i].exibirNomeIdade());
+			if(listaCliente[i].conta!=null) {
+				System.out.print(listaCliente[i].exibirDadosConta());
+			}
+		}
+	}
+
+}
