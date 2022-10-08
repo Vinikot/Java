@@ -1,0 +1,17 @@
+package Ex54;
+
+public class ContaBancaria {
+	private String agencia;
+	private String numero;
+	private double saldo;
+	
+	ContaBancaria(){
+		
+	}
+	
+	ContaBancaria(String agencia, String numero, double saldo){
+		this.agencia=agencia;
+		this.numero=numero;
+		this.saldo=saldo;
+	}
+}

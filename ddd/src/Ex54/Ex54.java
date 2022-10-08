@@ -15,16 +15,16 @@ public class Ex54 {
 			Cliente a=new Cliente();
 			
 			System.out.print("Digite seu ID: ");
-			a.id=ler.nextInt();
+			a.setId(ler.nextInt());
 			
 			System.out.print("Digite seu nome: ");
-			a.nome=ler.next();
+			a.setNome(ler.next());
 			
 			System.out.print("Digite sua idade: ");
-			a.idade=ler.nextInt();
+			a.setIdade(ler.nextInt());
 			
 			System.out.print("Digite seu email: ");
-			a.email=ler.next();
+			a.setEmail(ler.next());
 				
 			System.out.print("Possui conta bancaria? (APENAS 's' OU 'n'): ");
 			cb=ler.next().charAt(0);
@@ -40,10 +40,10 @@ public class Ex54 {
 				saldo=ler.nextDouble();
 				
 				ContaBancaria b=new ContaBancaria(agencia, numero, saldo);
-				a.conta=b;
+				a.setConta(b);
 			}else {
 				ContaBancaria b=null;
-				a.conta=b;
+				a.setConta(b);
 			}
 			
 			listaCliente[i]=a;
@@ -51,7 +51,7 @@ public class Ex54 {
 		
 		for(int i=0;i<=4;i++) {
 			System.out.println(listaCliente[i].exibirNomeIdade());
-			if(listaCliente[i].conta!=null) {
+			if(listaCliente[i].getConta()!=null) {
 				System.out.println(listaCliente[i].exibirDadosConta());
 			}
 		}

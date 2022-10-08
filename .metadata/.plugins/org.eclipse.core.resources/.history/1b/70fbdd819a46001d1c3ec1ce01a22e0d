@@ -1,0 +1,22 @@
+package Encapsulamento;
+
+public class Produto {
+	private int id;
+	private String nome;
+	private double preco;
+	private double quantidade;
+	private Categoria categoria;
+	
+	
+	Produto(){
+		
+	}
+	
+	Produto(int id, String nome, double preco, double quantidade, Categoria categoria){
+		this.id=id;
+		this.nome=nome;
+		this.preco=preco;
+		this.quantidade=quantidade;
+		this.categoria=categoria;
+	}
+}

@@ -1,0 +1,10 @@
+package Encapsulamento;
+
+public class Produto {
+	private int id;
+	private String nome;
+	private double preco;
+	private double quantidade;
+	private Categoria categoria;
+	
+}
