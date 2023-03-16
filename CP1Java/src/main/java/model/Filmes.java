@@ -1,10 +1,13 @@
 package model;
 
+import java.util.HashMap;
+
 public class Filmes {
 
 	private int id;
 	private String nome;
 	private String sinopse;
+	private HashMap<Integer, Comentarios> comentario;
 	
 	public int getId() {
 		return id;
@@ -23,6 +26,12 @@ public class Filmes {
 	}
 	public void setSinopse(String sinopse) {
 		this.sinopse = sinopse;
+	}
+	public HashMap<Integer,Comentarios> getComentario() {
+		return comentario;
+	}
+	public void setComentario(HashMap<Integer, Comentarios> comentario) {
+		this.comentario = comentario;
 	}
 	
 }

@@ -18,7 +18,9 @@ public class Teste {
 		API_Filmes apiF = new API_Filmes();
 		HashMap<Integer, Filmes> filme = apiF.getFilmes();
 		
-		System.out.print(filme.values());
+		System.out.print(apiF.printFilmes(filme));
+		while(true)
+			System.out.print(apiF.getOpcao(filme));
 
 	}
 
